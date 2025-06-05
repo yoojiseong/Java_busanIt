@@ -3,6 +3,8 @@ package user_mini_project;
 import java.util.Scanner;
 
 import ch2.OperconditionTest;
+import ch3.Exs_ch3;
+import util.Random.RandomUtil;
 import util.User.UserService;
 
 public class MainClass_switch {
@@ -35,7 +37,13 @@ public class MainClass_switch {
                 case "4":
                     OperconditionTest.oper2();
                     break;
-
+                case "5":
+                    RandomUtil.rotto();
+                    break;
+                case "6":
+                    int count = Exs_ch3.count_q(scanner);
+                    System.out.println("입력한 문자 개수: " + count);
+                    break;
                 case "0":
                     System.out.println("프로그램을 종료합니다. 감사합니다.");
                     scanner.close();

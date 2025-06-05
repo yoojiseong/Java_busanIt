@@ -2,6 +2,7 @@ package ch3;
 
 import java.util.Scanner;
 import util.Date.DateUtil;
+import util.Model.Member;
 
 public class Exs_ch3_user_array {
     static final int MAX_USERS = 100; // 최대 회원 수
@@ -10,6 +11,11 @@ public class Exs_ch3_user_array {
     static String[] emails = new String[MAX_USERS];
     static String[] passwords = new String[MAX_USERS];
     static String[] registrationDates = new String[MAX_USERS];
+
+    // 추가 작업- 클래스 타입으로 데이터를 모으기
+    // 회원정보를 담아 둘 클래스 정의 , member클래스
+    // 회원 클래스를 담아 둘 배열 생성
+
     static int userCount = 0; // 현재 등록된 회원 수
 
     // 회원 추가 메서드

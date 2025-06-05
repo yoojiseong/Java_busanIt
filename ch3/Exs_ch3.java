@@ -92,10 +92,9 @@ public class Exs_ch3 {
     }
 
     // 회원 추가 관련프로그램 UI그리는 메소드
-    public static void ex_user_ui() {
+    public static void ex_user_ui(Scanner scanner) {
         int menu;
 
-        Scanner scanner = new Scanner(System.in);
         do {
             System.out.println("회원 관리 프로그램 예시");
             System.out.println("=================================================================");
@@ -106,19 +105,19 @@ public class Exs_ch3 {
             scanner.nextLine(); // 개행 문자 제거
             switch (menu) {
                 case 1:
-                    Exs_ch3_user_array.addUser(scanner); // 회원 추가
+                    Exs_ch3_user_array_doc.addUser(scanner); // 회원 추가
                     break;
                 case 2:
-                    Exs_ch3_user_array.viewUsers(); // 회원 조회
+                    Exs_ch3_user_array_doc.viewUsers(); // 회원 조회
                     break;
                 case 3:
-                    Exs_ch3_user_array.deleteUser(scanner); // 회원 삭제
+                    Exs_ch3_user_array_doc.deleteUser(scanner); // 회원 삭제
                     break;
                 case 4:
-                    Exs_ch3_user_array.updateUser(scanner); // 회원 수정
+                    Exs_ch3_user_array_doc.updateUser(scanner); // 회원 수정
                     break;
                 case 5:
-                    Exs_ch3_user_array.addDummyUsers(); // 더미 데이터 추가
+                    Exs_ch3_user_array_doc.addDummyUsers(); // 더미 데이터 추가
                     System.out.println("더미 데이터 5개가 추가되었습니다.");
                     break;
                 case 0:
